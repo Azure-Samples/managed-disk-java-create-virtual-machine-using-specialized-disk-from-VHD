@@ -4,9 +4,8 @@ languages:
 - java
 products:
 - azure
-extensions:
-- services: Compute
-- platforms: java
+description: "Getting Started with Compute - Create Virtual Machine Using Specialized Disk From Vhd - in Java"
+urlFragment: managed-disk-java-create-virtual-machine-using-specialized-disk-from-VHD
 ---
 
 # Getting Started with Compute - Create Virtual Machine Using Specialized Disk From Vhd - in Java #
