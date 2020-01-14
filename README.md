@@ -4,37 +4,39 @@ languages:
 - java
 products:
 - azure
-- azure-virtual-machines
-description: "Azure Compute sample for managing virtual machines."
-urlFragment: managed-disk-java-create-virtual-machine-using-specialized-disk-from-VHD
+extensions:
+- services: Compute
+- platforms: java
 ---
 
-# Create Azure Virtual Machines Using Specialized Disk From VHD (Java)
+# Getting Started with Compute - Create Virtual Machine Using Specialized Disk From Vhd - in Java #
 
-Azure Compute sample for managing virtual machines.
 
-- Create an un-managed virtual machine from PIR image with data disks
-- Create managed disks from specialized un-managed OS and Data disk of virtual machine
-- Create a virtual machine by attaching the managed disks
-- Get SAS Uri to the virtual machine's managed disks
+  Azure Compute sample for managing virtual machines.
+   - Create an un-managed virtual machine from PIR image with data disks
+   - Create managed disks from specialized un-managed OS and Data disk of virtual machine
+   - Create a virtual machine by attaching the managed disks
+   - Get SAS Uri to the virtual machine's managed disks
  
 
-## Running this sample
+## Running this Sample ##
 
 To run this sample:
 
 Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md).
 
-```bash
-git clone https://github.com/Azure-Samples/managed-disk-java-create-virtual-machine-using-specialized-disk-from-VHD.git
-cd managed-disk-java-create-virtual-machine-using-specialized-disk-from-VHD
-mvn clean compile exec:java
-```
+    git clone https://github.com/Azure-Samples/managed-disk-java-create-virtual-machine-using-specialized-disk-from-VHD.git
 
-## More information
+    cd managed-disk-java-create-virtual-machine-using-specialized-disk-from-VHD
+
+    mvn clean compile exec:java
+
+## More information ##
 
 [http://azure.com/java](http://azure.com/java)
 
-If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212).
+If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
+
+---
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
